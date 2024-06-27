@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot RAN</title>
+    
+ 
+<style>
+        /* Estilos CSS para
+
+        /* Est
+
+ 
+
+        /* Estilos CSS para la página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+            max-width: 90%;
+        }
+        h1 {
+            color: #8c3c7c;
+            text-align: center;
+        }
+        #chatbox {
+            height: 300px;
+            overflow-y: scroll;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        #input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        #sendBtn {
+            padding: 10px 20px;
+            background-color: #8c3c7c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+       
+<h1>Chatbot RAN</h1>
+        <div id="chatbox"></div>
+        <div>
+            <input type="text" id="input" placeholder="Escribe tu mensaje...">
+            
+       
+<button id="sendBtn">Enviar</button>
+        
+  
+</div>
+    
+    </div
+</div>
+
+    <script>
+      
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendació
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gustaría una recomendación?
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gust
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro,
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gustaría una recomendación?';
+                    } else if (message.toLowerCase().includes('tecnolo
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gustaría una recomendación?';
+                    } else if (message.toLowerCase().includes('tecnología')) {
+                        response = 'Para temas de tecnología, te recomiendo visitar sitios como TechCrunch o The Verge para estar 
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gustaría una recomendación?';
+                    } else if (message.toLowerCase().includes('tecnología')) {
+                        response = 'Para temas de tecnología, te recomiendo visitar sitios como TechC
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gustaría una recomendación?';
+                    } else if (message.toLowerCase().includes('tecnología')) {
+                        response = 'Para temas de tecnología, te recomie
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gustaría una recomendación?';
+                    } else if (message.toLowerCase().includes('tecnología')) {
+                        response = 'Para t
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gustaría una recomendación?';
+                    } else if (message.toLowerCase().includes('tecnología')) {
+                        response = 'Para temas de tecnología, te recomiendo visitar sitios como TechCrunch o The Verge para estar al día.';
+                    } else if (message.toLowerCase().includes('wikipedia')) {
+                        // Ejemplo de búsqueda en Wikipedia
+                        const searchTerm = message.replace('wikipedia', '').trim();
+                        if (searchTerm !== '') {
+                            fetch(`https://es.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=true&titles=${encodeURIComponent(searchTerm)}`)
+                                .then(response => response.json())
+                                .then(data => {
+                                    const pages = data.query.pages;
+                                    const pageId = Object.keys(pages)[0];
+                                    const extract = pages[pageId].extract;
+                                    if (extract) {
+                                        sendMessage(`RAN: Según Wikipedia, ${extract}`);
+                                    } else {
+                                        sendMessage('RAN: Lo siento, no encontré información sobre ese tema en
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gustaría una recomendación?';
+                    } else if (message.toLowerCase().includes('tecnología')) {
+                        response = 'Para temas de tecnología, te recomiendo visitar sitios como TechCrunch o The Verge para estar al día.';
+                    } else if (message.toLowerCase().includes('wikipedia')) {
+                        // Ejemplo de búsqueda en Wikipedia
+                        const searchTerm = message.replace('wikipedia', '').trim();
+                        if (searchTerm !== '') {
+                            fetch(`https://es.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=true&titles=${encodeURIComponent(searchTerm)}`)
+                                .then(response => response.json())
+                                .then(data => {
+                                    const pages = data.query.pages;
+                                    const pageId = Object.keys(pages)[0];
+                                    const extract = pages[pageId].extract;
+                                    if (extract) {
+                                        sendMessage(`RAN: Según Wikipedia, ${extract}`);
+                                    } else {
+                                        sendMessage('RAN: Lo siento, no en
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gustaría una recomendación?';
+                    } else if (message.toLowerCase().includes('tecnología')) {
+                        response = 'Para temas de tecnología, te recomiendo visitar sitios como TechCrunch o The Verge para estar al día.';
+                    } else if (message.toLowerCase().includes('wikipedia')) {
+                        // Ejemplo de búsqueda en Wikipedia
+                        const searchTerm = message.replace('wikipedia', '').trim();
+                        if (searchTerm !== '') {
+                            fetch(`https://es.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=true&titles=${encodeURIComponent(searchTerm)}`)
+                                .then(response => response.json())
+                                .then(data => {
+                                    const pages = data.query.pages;
+                                    const pageId = Object.keys(pages)[0];
+                                    const extract = pages[pageId].extract;
+                                    if (extract) {
+                                        sendMessage(`RAN: Según Wikipedia, ${extract}`);
+                                    } else {
+                                        sendMessage('RAN: Lo siento, no encontré información sobre ese tema en Wikipedia.');
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error('Error al obtener información de Wi
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gustaría una recomendación?';
+                    } else if (message.toLowerCase().includes('tecnología')) {
+                        response = 'Para temas de tecnología, te recomiendo visitar sitios como TechCrunch o The Verge para estar al día.';
+                    } else if (message.toLowerCase().includes('wikipedia')) {
+                        // Ejemplo de búsqueda en Wikipedia
+                        const searchTerm = message.replace('wikipedia', '').trim();
+                        if (searchTerm !== '') {
+                            fetch(`https://es.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=true&titles=${encodeURIComponent(searchTerm)}`)
+                                .then(response => response.json())
+                                .then(data => {
+                                    const pages = data.query.pages;
+                                    const pageId = Object.keys(pages)[0];
+                                    const extract = pages[pageId].extract;
+                                    if (extract) {
+                                        sendMessage(`RAN: Según Wikipedia, ${extract}`);
+                                    } else {
+                                        sendMessage('RAN: Lo siento, no encontré información sobre ese tema en Wikipedia.');
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error('Error al obtener información de Wikipedia:', error);
+                                    sendMessage('RAN: Hubo un problema al intentar obtener información d
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gustaría una recomendación?';
+                    } else if (message.toLowerCase().includes('tecnología')) {
+                        response = 'Para temas de tecnología, te recomiendo visitar sitios como TechCrunch o The Verge para estar al día.';
+                    } else if (message.toLowerCase().includes('wikipedia')) {
+                        // Ejemplo de búsqueda en Wikipedia
+                        const searchTerm = message.replace('wikipedia', '').trim();
+                        if (searchTerm !== '') {
+                            fetch(`https://es.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=true&titles=${encodeURIComponent(searchTerm)}`)
+                                .then(response => response.json())
+                                .then(data => {
+                                    const pages = data.query.pages;
+                                    const pageId = Object.keys(pages)[0];
+                                    const extract = pages[pageId].extract;
+                                    if (extract) {
+                                        sendMessage(`RAN: Según Wikipedia, ${extract}`);
+                                    } else {
+                                        sendMessage('RAN: Lo siento, no encontré información sobre ese tema en Wikipedia.');
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error('Error al obtener información de Wikipedia:', error);
+                                    sendMessage('RAN: Hubo un pro
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gustaría una recomendación?';
+                    } else if (message.toLowerCase().includes('tecnología')) {
+                        response = 'Para temas de tecnología, te recomiendo visitar sitios como TechCrunch o The Verge para estar al día.';
+                    } else if (message.toLowerCase().includes('wikipedia')) {
+                        // Ejemplo de búsqueda en Wikipedia
+                        const searchTerm = message.replace('wikipedia', '').trim();
+                        if (searchTerm !== '') {
+                            fetch(`https://es.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=true&titles=${encodeURIComponent(searchTerm)}`)
+                                .then(response => response.json())
+                                .then(data => {
+                                    const pages = data.query.pages;
+                                    const pageId = Object.keys(pages)[0];
+                                    const extract = pages[pageId].extract;
+                                    if (extract) {
+                                        sendMessage(`RAN: Según Wikipedia, ${extract}`);
+                                    } else {
+                                        sendMessage('RAN: Lo siento, no encontré información sobre ese tema en Wikipedia.');
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error('Error al obtener información de Wikipedia:', error);
+                                    sendMessage('RAN: Hubo un problema al intentar obtener información de Wikipedia.');
+                                });
+                            return;
+                        } else {
+                            response = 'No entendí bien sobre qué tema quieres información. ¿Podrías ser más es
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gustaría una recomendación?';
+                    } else if (message.toLowerCase().includes('tecnología')) {
+                        response = 'Para temas de tecnología, te recomiendo visitar sitios como TechCrunch o The Verge para estar al día.';
+                    } else if (message.toLowerCase().includes('wikipedia')) {
+                        // Ejemplo de búsqueda en Wikipedia
+                        const searchTerm = message.replace('wikipedia', '').trim();
+                        if (searchTerm !== '') {
+                            fetch(`https://es.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=true&titles=${encodeURIComponent(searchTerm)}`)
+                                .then(response => response.json())
+                                .then(data => {
+                                    const pages = data.query.pages;
+                                    const pageId = Object.keys(pages)[0];
+                                    const extract = pages[pageId].extract;
+                                    if (extract) {
+                                        sendMessage(`RAN: Según Wikipedia, ${extract}`);
+                                    } else {
+                                        sendMessage('RAN: Lo siento, no encontré información sobre ese tema en Wikipedia.');
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error('Error al obtener información de Wikipedia:', error);
+                                    sendMessage('RAN: Hubo un problema al intentar obtener información de Wikipedia.');
+                                });
+                            return;
+                        } else {
+                            response = 'No entendí bien sobre qué tema quie
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gustaría una recomendación?';
+                    } else if (message.toLowerCase().includes('tecnología')) {
+                        response = 'Para temas de tecnología, te recomiendo visitar sitios como TechCrunch o The Verge para estar al día.';
+                    } else if (message.toLowerCase().includes('wikipedia')) {
+                        // Ejemplo de búsqueda en Wikipedia
+                        const searchTerm = message.replace('wikipedia', '').trim();
+                        if (searchTerm !== '') {
+                            fetch(`https://es.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=true&titles=${encodeURIComponent(searchTerm)}`)
+                                .then(response => response.json())
+                                .then(data => {
+                                    const pages = data.query.pages;
+                                    const pageId = Object.keys(pages)[0];
+                                    const extract = pages[pageId].extract;
+                                    if (extract) {
+                                        sendMessage(`RAN: Según Wikipedia, ${extract}`);
+                                    } else {
+                                        sendMessage('RAN: Lo siento, no encontré información sobre ese tema en Wikipedia.');
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error('Error al obtener información de Wikipedia:', error);
+                                    sendMessage('RAN: Hubo un problema al intentar obtener información de Wikipedia.');
+                                });
+                            return;
+                        } else {
+                            response = 'No entendí bien sobre qué tema quieres información. ¿Podrías ser más específico?';
+                        }
+                    } else {
+                        response = 'No entendí bien tu pregunta. ¿Cómo puedo ay
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gustaría una recomendación?';
+                    } else if (message.toLowerCase().includes('tecnología')) {
+                        response = 'Para temas de tecnología, te recomiendo visitar sitios como TechCrunch o The Verge para estar al día.';
+                    } else if (message.toLowerCase().includes('wikipedia')) {
+                        // Ejemplo de búsqueda en Wikipedia
+                        const searchTerm = message.replace('wikipedia', '').trim();
+                        if (searchTerm !== '') {
+                            fetch(`https://es.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=true&titles=${encodeURIComponent(searchTerm)}`)
+                                .then(response => response.json())
+                                .then(data => {
+                                    const pages = data.query.pages;
+                                    const pageId = Object.keys(pages)[0];
+                                    const extract = pages[pageId].extract;
+                                    if (extract) {
+                                        sendMessage(`RAN: Según Wikipedia, ${extract}`);
+                                    } else {
+                                        sendMessage('RAN: Lo siento, no encontré información sobre ese tema en Wikipedia.');
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error('Error al obtener información de Wikipedia:', error);
+                                    sendMessage('RAN: Hubo un problema al intentar obtener información de Wikipedia.');
+                                });
+                            return;
+                        } else {
+                            response = 'No entendí bien sobre qué tema quieres información. ¿Podrías ser más específico?';
+                        }
+                    } else {
+                        response = 'No ente
+
+        const chatbox = document.getElementById('chatbox');
+        const input = document.getElementById('input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        function sendMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.classList.add('message');
+            msgElement.textContent = message;
+            chatbox.appendChild(msgElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function processInput() {
+            const message = input.value.trim();
+            if (message !== '') {
+                sendMessage(`Tú: ${message}`);
+                input.value = '';
+
+                // Lógica para responder con recomendaciones o información de Wikipedia
+                setTimeout(() => {
+                    let response = '';
+
+                    if (message.toLowerCase().includes('recomendación')) {
+                        response = 'Claro, ¿sobre qué tema te gustaría una recomendación?';
+                    } else if (message.toLowerCase().includes('tecnología')) {
+                        response = 'Para temas de tecnología, te recomiendo visitar sitios como TechCrunch o The Verge para estar al día.';
+                    } else if (message.toLowerCase().includes('wikipedia')) {
+                        // Ejemplo de búsqueda en Wikipedia
+                        const searchTerm = message.replace('wikipedia', '').trim();
+                        if (searchTerm !== '') {
+                            fetch(`https://es.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=true&titles=${encodeURIComponent(searchTerm)}`)
+                                .then(response => response.json())
+                                .then(data => {
+                                    const pages = data.query.pages;
+                                    const pageId = Object.keys(pages)[0];
+                                    const extract = pages[pageId].extract;
+                                    if (extract) {
+                                        sendMessage(`RAN: Según Wikipedia, ${extract}`);
+                                    } else {
+                                        sendMessage('RAN: Lo siento, no encontré información sobre ese tema en Wikipedia.');
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error('Error al obtener información de Wikipedia:', error);
+                                    sendMessage('RAN: Hubo un problema al intentar obtener información de Wikipedia.');
+                                });
+                            return;
+                        } else {
+                            response = 'No entendí bien sobre qué tema quieres información. ¿Podrías ser más específico?';
+                        }
+                    } else {
+                        response = 'No entendí bien tu pregunta. ¿Cómo puedo ayudarte?';
+                    }
+
+                    sendMessage(`RAN: ${response}`);
+                }, 500); // Simulación de respuesta después de 0.5 segundos
+            }
+        }
+
+        sendBtn.addEventListener('click', processInput);
+        input.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                processInput();
+            }
+        });
+    </script>
+</body>
+</html>
